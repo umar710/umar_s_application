@@ -1,4 +1,9 @@
-A modern HTML project utilizing Tailwind CSS for building responsive web applications with minimal setup.
+# 🌐 Modern Responsive Website
+
+A clean and responsive web project built with **HTML5** and **Tailwind CSS**, designed to follow modern web development best practices.  
+This project is lightweight, fast, and mobile-first, making it a solid foundation for personal projects, portfolios, or small business websites.  
+
+---
 
 ## 🚀 Features
 
@@ -44,3 +49,8 @@ npm run build:css
 # or
 yarn build:css
 ```
+
+## 🌍 Live Deployment
+
+The application is deployed and available at:  
+👉 [https://umaraplication.netlify.app/pages/newzealandhoneycoproductdetail](https://umaraplication.netlify.app/pages/newzealandhoneycoproductdetail)
