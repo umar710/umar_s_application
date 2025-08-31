@@ -44,9 +44,3 @@ npm run build:css
 # or
 yarn build:css
 ```
-## 🙏 Acknowledgments
-
-- Built with [Rocket.new](https://rocket.new)
-- Powered by HTML and Tailwind CSS
-
-Built with ❤️ on Rocket.new
