@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Zealand Honey Co. - Manuka Honey UMF 24+ MGO 1122+</title>
+    <link href="../css/main.css" rel="stylesheet" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fumarsapp9929back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-[#fbf9f6]">
+    <!-- Header -->
+    <header class="bg-[#fbf9f6] w-full">
+        <div class="flex flex-row justify-between items-center w-full px-4 sm:px-6 lg:px-[70px] py-3">
+            <!-- Which Manuka Button -->
+            <div class="hidden lg:flex">
+                <button class="border border-[#313131] rounded-[20px] px-2 py-2">
+                    <span class="text-[13px] font-normal leading-[18px] tracking-[1px] uppercase text-[#313131] font-['Segoe_UI']">
+                        WHICH MANUKA IS FOR ME?
+                    </span>
+                </button>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="hidden lg:flex flex-row items-center gap-12">
+                <button role="menuitem" class="text-[18px] font-normal leading-6 text-[#313131] font-['Segoe_UI'] hover:text-gray-600 transition-colors">
+                    Shop
+                </button>
+                <button role="menuitem" class="text-[18px] font-normal leading-6 text-[#313131] font-['Segoe_UI'] hover:text-gray-600 transition-colors">
+                    Explore
+                </button>
+            </nav>
+
+            <!-- Logo -->
+            <div class="flex-1 lg:flex-none flex justify-center lg:justify-start lg:ml-[52px]">
+                <img src="../assets/images/img_link.svg" class="w-[120px] h-[60px] sm:w-[160px] sm:h-[80px] lg:w-[214px] lg:h-[102px]" alt="New Zealand Honey Co. Logo" />
+            </div>
+
+            <!-- Right Navigation -->
+            <div class="hidden lg:flex flex-row items-center gap-6 ml-[52px]">
+                <div class="flex flex-row items-center gap-12">
+                    <button role="menuitem" class="text-[17px] font-normal leading-6 text-[#313131] font-['Segoe_UI'] hover:text-gray-600 transition-colors px-[22px] py-[30px]">
+                        About
+                    </button>
+                    <button role="menuitem" class="text-[18px] font-normal leading-6 text-[#313131] font-['Segoe_UI'] hover:text-gray-600 transition-colors px-[22px] py-[30px]">
+                        Rewards
+                    </button>
+                    <button role="menuitem" class="text-[18px] font-normal leading-6 text-[#313131] font-['Segoe_UI'] hover:text-gray-600 transition-colors px-[22px] py-[30px]">
+                        Contact
+                    </button>
+                </div>
+                
+                <!-- User Actions -->
+                <div class="flex flex-row items-center gap-0">
+                    <button class="w-[44px] h-[44px] ml-[22px]">
+                        <img src="../assets/images/img_link_blue_gray_900.svg" class="w-full h-full" alt="User Account" />
+                    </button>
+                    <button class="w-[44px] h-[44px]">
+                        <img src="../assets/images/img_details_modal.svg" class="w-full h-full" alt="Search" />
+                    </button>
+                    <div class="relative w-[44px] h-[44px]">
+                        <button class="w-full h-full">
+                            <img src="../assets/images/img_svg.svg" class="w-[24px] h-[24px] mx-auto" alt="Cart" />
+                        </button>
+                        <span class="absolute -top-1 -right-1 bg-[#f1b434] text-[#313131] text-[12px] font-normal leading-4 text-center w-[22px] h-[22px] rounded-[10px] flex items-center justify-center">
+                            0
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="lg:hidden p-2" onclick="toggleMobileMenu()" aria-label="Open menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-[#fbf9f6] border-t border-gray-200">
+            <div class="px-4 py-2 space-y-2">
+                <button class="block w-full text-left py-2 text-[18px] font-normal text-[#313131] font-['Segoe_UI']">
+                    Shop
+                </button>
+                <button class="block w-full text-left py-2 text-[18px] font-normal text-[#313131] font-['Segoe_UI']">
+                    Explore
+                </button>
+                <button class="block w-full text-left py-2 text-[18px] font-normal text-[#313131] font-['Segoe_UI']">
+                    About
+                </button>
+                <button class="block w-full text-left py-2 text-[18px] font-normal text-[#313131] font-['Segoe_UI']">
+                    Rewards
+                </button>
+                <button class="block w-full text-left py-2 text-[18px] font-normal text-[#313131] font-['Segoe_UI']">
+                    Contact
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="w-full px-4 sm:px-6 lg:px-[34px] py-4 lg:py-[34px]">
+        <div class="flex flex-col lg:flex-row justify-center items-start w-full gap-6 lg:gap-8">
+            <!-- Left Column - Product Images -->
+            <div class="w-full lg:w-[46%] flex flex-col justify-start items-start">
+                <!-- Main Product Image -->
+                <div class="w-full mb-8 bg-[#fbf9f6] flex flex-col justify-start items-center">
+                    <div class="relative w-full max-w-[584px] mx-auto">
+                        <div class="relative w-full h-[300px] sm:h-[400px] lg:h-[584px] bg-cover bg-center rounded-lg" style="background-image: url('../assets/images/img_.png')">
+                            <img src="../assets/images/img_manuka_honey_nz.png" class="w-full h-full object-contain" alt="Manuka Honey UMF 24+ MGO 1122+" />
+                            
+                            <!-- Navigation Arrows -->
+                            <div class="absolute bottom-[100px] left-0 right-0 flex justify-between items-center px-[14px]">
+                                <button class="w-[18px] h-[40px] hover:opacity-70 transition-opacity">
+                                    <img src="../assets/images/img_button_previous.svg" class="w-full h-full" alt="Previous" />
+                                </button>
+                                <button class="w-[18px] h-[40px] hover:opacity-70 transition-opacity">
+                                    <img src="../assets/images/img_button_next_slide.svg" class="w-full h-full" alt="Next" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thumbnail Images -->
+                <div class="w-full flex flex-col gap-[10px] items-center">
+                    <div class="flex flex-row gap-[10px] justify-center items-center">
+                        <div class="bg-[#fbf9f6] flex justify-center items-center">
+                            <img src="../assets/images/img_1_manuka_honey_web_24_5_png.png" class="w-[140px] h-[100px] sm:w-[200px] sm:h-[140px] lg:w-[286px] lg:h-[200px] object-cover" alt="Product view 1" />
+                        </div>
+                        <div class="bg-[#fbf9f6] flex justify-center items-center">
+                            <img src="../assets/images/img_1_manuka_honey_web_24_png.png" class="w-[140px] h-[100px] sm:w-[200px] sm:h-[140px] lg:w-[286px] lg:h-[200px] object-cover" alt="Product view 2" />
+                        </div>
+                    </div>
+
+                    <!-- Video Section -->
+                    <div class="w-full bg-black rounded-lg overflow-hidden">
+                        <div class="relative w-full h-[200px] sm:h-[300px] lg:h-[400px]">
+                            <img src="../assets/images/img_image_330x584.png" class="w-full h-full object-cover" alt="Product video" />
+                            
+                            <!-- Video Controls Overlay -->
+                            <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4">
+                                <div class="flex justify-between items-center">
+                                    <div class="flex items-center gap-4">
+                                        <div class="w-[50px] h-[50px] rounded-full overflow-hidden">
+                                            <img src="../assets/images/img_container.svg" class="w-full h-full object-cover" alt="Channel" />
+                                        </div>
+                                        <div class="flex-1">
+                                            <div class="text-right">
+                                                <span class="text-[14px] font-medium text-[#eeeeee] bg-black bg-opacity-50 px-2 py-1 rounded">
+                                                    Watch Later
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-4">
+                                        <span class="text-[14px] font-medium text-[#eeeeee] bg-black bg-opacity-50 px-2 py-1 rounded">
+                                            Share
+                                        </span>
+                                        <span class="text-[14px] font-medium text-[#eeeeee] bg-black bg-opacity-50 px-2 py-1 rounded">
+                                            1/1
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Product Images Grid -->
+                    <div class="grid grid-cols-2 gap-[10px] w-full mt-4">
+                        <div class="bg-[#fbf9f6] flex justify-center items-center">
+                            <img src="../assets/images/img_1_manuka_honey_web_24_1_png.png" class="w-full h-[120px] sm:h-[160px] lg:h-[200px] object-cover" alt="Product detail 1" />
+                        </div>
+                        <div class="bg-[#fbf9f6] flex justify-end items-center">
+                            <img src="../assets/images/img_1_manuka_honey_web_24_3_png.png" class="w-full h-[120px] sm:h-[160px] lg:h-[200px] object-cover" alt="Product detail 2" />
+                        </div>
+                        <div class="bg-[#fbf9f6] flex justify-center items-center">
+                            <img src="../assets/images/img_us_24_product_t.png" class="w-full h-[120px] sm:h-[160px] lg:h-[200px] object-cover" alt="Product detail 3" />
+                        </div>
+                        <div class="bg-[#fbf9f6] flex justify-end items-center">
+                            <img src="../assets/images/img_newzealandmanuk.png" class="w-full h-[120px] sm:h-[160px] lg:h-[200px] object-cover" alt="Product detail 4" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Product Information -->
+            <div class="w-full lg:w-[46%] flex flex-col justify-start items-start mt-4 lg:mt-[28px] mb-4">
+                <!-- Product Title and Ratings -->
+                <div class="relative w-full">
+                    <div class="flex flex-col justify-start items-start w-full">
+                        <h1 class="text-[24px] sm:text-[32px] lg:text-[40px] font-normal leading-[32px] sm:leading-[42px] lg:leading-[54px] text-[#313131] font-['Segoe_UI']">
+                            Manuka Honey
+                        </h1>
+                        <div class="flex flex-col items-start mt-2">
+                            <div class="flex flex-row items-start gap-2">
+                                <div class="flex flex-col items-center">
+                                    <div class="flex flex-row items-start">
+                                        <span class="text-[28px] sm:text-[34px] lg:text-[38px] font-normal leading-[38px] sm:leading-[44px] lg:leading-[51px] text-[#313131] font-['Segoe_UI']">
+                                            UMF
+                                        </span>
+                                        <img src="../assets/images/img_small.png" class="w-[8px] h-[18px] sm:w-[10px] sm:h-[22px] lg:w-[12px] lg:h-[26px] ml-1" alt="Trademark" />
+                                    </div>
+                                    <span class="text-[30px] sm:text-[36px] lg:text-[40px] font-normal leading-[40px] sm:leading-[46px] lg:leading-[54px] text-[#313131] font-['Segoe_UI']">
+                                        MGO
+                                    </span>
+                                </div>
+                                <div class="flex flex-col items-start ml-4">
+                                    <span class="text-[40px] sm:text-[48px] lg:text-[56px] font-normal leading-[50px] sm:leading-[62px] lg:leading-[75px] text-[#313131] font-['Segoe_UI'] -mt-[8px] sm:-mt-[10px] lg:-mt-[14px]">
+                                        24+
+                                    </span>
+                                    <span class="text-[36px] sm:text-[44px] lg:text-[50px] font-normal leading-[46px] sm:leading-[58px] lg:leading-[68px] text-[#313131] font-['Segoe_UI'] -mt-[16px] sm:-mt-[22px] lg:-mt-[28px]">
+                                        1122+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UMF/MGO Info Button -->
+                    <button onclick="toggleInfoModal()" class="bg-[#66666626] rounded-[22px] px-[10px] py-[10px] flex flex-row gap-2 justify-center items-center mt-6 hover:bg-gray-200 transition-colors">
+                        <img src="../assets/images/img_svg_gray_700.svg" class="w-4 h-4" alt="Info" />
+                        <span class="text-[13px] font-normal leading-[19px] text-[#666666] font-['Segoe_UI']">
+                            What is UMF and MGO?
+                        </span>
+                    </button>
+
+                    <!-- Reviews -->
+                    <div class="flex flex-row gap-[10px] justify-center items-center mt-8 -ml-[60px]">
+                        <div class="relative w-[108px] h-[20px]">
+                            <!-- Background stars -->
+                            <div class="absolute inset-0 flex flex-row gap-1 justify-start items-center">
+                                <img src="../assets/images/img_vector.svg" class="w-[18px] h-4" alt="Star" />
+                                <img src="../assets/images/img_vector.svg" class="w-[18px] h-4" alt="Star" />
+                                <img src="../assets/images/img_vector.svg" class="w-[18px] h-4" alt="Star" />
+                                <img src="../assets/images/img_vector.svg" class="w-[18px] h-4" alt="Star" />
+                                <img src="../assets/images/img_vector.svg" class="w-[18px] h-4" alt="Star" />
+                            </div>
+                            <!-- Filled stars -->
+                            <div class="absolute inset-0 flex flex-row gap-1 justify-center items-center">
+                                <img src="../assets/images/img_svg_yellow_700.svg" class="w-[18px] h-[18px]" alt="Filled Star" />
+                                <img src="../assets/images/img_svg_yellow_700.svg" class="w-[18px] h-[18px]" alt="Filled Star" />
+                                <img src="../assets/images/img_svg_yellow_700.svg" class="w-[18px] h-[18px]" alt="Filled Star" />
+                                <img src="../assets/images/img_svg_yellow_700.svg" class="w-[18px] h-[18px]" alt="Filled Star" />
+                                <img src="../assets/images/img_svg_yellow_700.svg" class="w-[18px] h-[18px]" alt="Filled Star" />
+                            </div>
+                        </div>
+                        <span class="text-[12px] font-normal leading-4 tracking-[2px] uppercase text-[#313131] font-['Segoe_UI'] ml-2">
+                            825 Reviews
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Product Description -->
+                <div class="w-full mt-[102px] -mt-[108px]">
+                    <p class="text-[14px] sm:text-[16px] lg:text-[18px] font-normal leading-[21px] sm:leading-[24px] lg:leading-[27px] text-[#313131] font-['Segoe_UI'] w-full lg:w-[94%]">
+                        For those times in life when quality comes first. This pure UMF™ 24+ Manuka<br />
+                        Honey is powerfully active, sourced from wild and rugged locations around<br />
+                        Aotearoa New Zealand and great for almost all uses. It has a full, delicious<br />
+                        flavour and your body will love you for it.
+                    </p>
+                </div>
+
+                <!-- Certifications -->
+                <div class="flex flex-row justify-start items-center w-full mt-[232px] gap-[38px] flex-wrap">
+                    <img src="../assets/images/img_certifications.png" class="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] lg:w-[70px] lg:h-[70px]" alt="Certification 1" />
+                    <img src="../assets/images/img_certifications_70x70.png" class="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] lg:w-[70px] lg:h-[70px]" alt="Certification 2" />
+                    <img src="../assets/images/img_certifications_1.png" class="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] lg:w-[70px] lg:h-[70px]" alt="Certification 3" />
+                    <img src="../assets/images/img_certifications_2.png" class="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] lg:w-[70px] lg:h-[70px]" alt="Certification 4" />
+                    <img src="../assets/images/img_certifications_3.png" class="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] lg:w-[70px] lg:h-[70px]" alt="Certification 5" />
+                    <img src="../assets/images/img_certifications_4.png" class="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] lg:w-[70px] lg:h-[70px]" alt="Certification 6" />
+                </div>
+
+                <!-- Size Selection -->
+                <div class="w-full mt-12">
+                    <span class="text-[14px] font-normal leading-[19px] tracking-[1px] uppercase text-[#313131] font-['Segoe_UI']">
+                        Size (Select One)
+                    </span>
+                    <p class="text-[18px] font-normal leading-6 text-[#313131] font-['Segoe_UI'] mt-2">
+                        Variant: 125g | 4.4oz
+                    </p>
+                    
+                    <!-- Size Options Grid -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-6">
+                        <div class="flex justify-center items-center">
+                            <img src="../assets/images/img_label_label_paints.png" class="w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[130px] lg:h-[130px] rounded-[24px] cursor-pointer hover:opacity-80 transition-opacity" alt="Size option 1" />
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <img src="../assets/images/img_label_label_paints_130x130.png" class="w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[130px] lg:h-[130px] rounded-[24px] cursor-pointer hover:opacity-80 transition-opacity" alt="Size option 2" />
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <img src="../assets/images/img_label_label_paints_1.png" class="w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[130px] lg:h-[130px] rounded-[24px] cursor-pointer hover:opacity-80 transition-opacity" alt="Size option 3" />
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <img src="../assets/images/img_label_label_paints_2.png" class="w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[130px] lg:h-[130px] rounded-[24px] cursor-pointer hover:opacity-80 transition-opacity" alt="Size option 4" />
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <img src="../assets/images/img_label_label_paints_3.png" class="w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[130px] lg:h-[130px] rounded-[24px] cursor-pointer hover:opacity-80 transition-opacity" alt="Size option 5" />
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <img src="../assets/images/img_label_label_paints_4.png" class="w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[130px] lg:h-[130px] rounded-[24px] cursor-pointer hover:opacity-80 transition-opacity" alt="Size option 6" />
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <img src="../assets/images/img_label_label_paints_5.png" class="w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] lg:w-[130px] lg:h-[130px] rounded-[24px] cursor-pointer hover:opacity-80 transition-opacity" alt="Size option 7" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment Options -->
+                <div class="w-full mt-12">
+                    <span class="text-[14px] font-normal leading-[19px] tracking-[1px] uppercase text-[#313131] font-['Segoe_UI']">
+                        PAYMENT OPTIONS (SELECT ONE)
+                    </span>
+                    
+                    <div class="bg-[#f2f2f2] rounded-[24px] p-[22px] mt-3">
+                        <div class="flex flex-col sm:flex-row gap-[14px] justify-start items-center w-full mt-1">
+                            <!-- One-time Purchase -->
+                            <div class="bg-[#f1b434] border border-[#f1b434] rounded-[32px] px-[48px] py-[14px] flex justify-between items-center w-full sm:w-auto">
+                                <span class="text-[16px] font-normal leading-[17px] text-center text-white font-['Segoe_UI'] ml-4">
+                                    One-time<br />purchase
+                                </span>
+                                <span class="text-[16px] font-normal leading-[17px] text-center text-white font-['Segoe_UI']">
+                                    $55.88<br />USD
+                                </span>
+                            </div>
+                            
+                            <!-- Subscribe & Save -->
+                            <div class="bg-white border border-[#f1b434] rounded-[32px] px-[14px] py-[14px] flex justify-center items-center gap-[28px] w-full sm:w-auto">
+                                <span class="text-[15px] font-normal leading-[17px] text-center text-[#313131] font-['Segoe_UI']">
+                                    Subscribe & save<br />20%
+                                </span>
+                                <span class="text-[16px] font-normal leading-[17px] text-center text-[#313131] font-['Segoe_UI']">
+                                    $44.70<br />USD
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <!-- Subscription Info -->
+                        <div class="flex flex-row justify-start items-center w-full mt-4">
+                            <img src="../assets/images/img_svg_blue_gray_900.svg" class="w-4 h-4" alt="Info" />
+                            <span class="text-[14px] font-normal leading-[19px] text-center text-[#313131] font-['Segoe_UI'] ml-2">
+                                What is a Subscription?
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quantity and Add to Cart -->
+                <div class="flex flex-col sm:flex-row justify-start items-center w-full mt-11 gap-4">
+                    <!-- Quantity Selection -->
+                    <div class="flex flex-col gap-[6px] justify-start items-start w-full sm:w-[38%]">
+                        <span class="text-[13px] font-normal leading-[18px] text-[#313131] font-['Segoe_UI']">
+                            SELECT QUANTITY
+                        </span>
+                        <div class="bg-[#f1b434] border border-white rounded-[22px] flex flex-row gap-[18px] justify-center items-end px-4 py-2 mb-3">
+                            <button class="text-[18px] font-normal leading-6 tracking-[2px] uppercase text-white font-['Segoe_UI'] mb-[6px] hover:opacity-70 transition-opacity" onclick="decreaseQuantity()">
+                                -
+                            </button>
+                            <div class="bg-[#f1b434] px-[10px] py-[10px] flex items-center justify-center">
+                                <span id="quantity" class="text-[16px] font-normal leading-[22px] text-center text-white font-['Segoe_UI']">
+                                    1
+                                </span>
+                            </div>
+                            <button class="text-[18px] font-normal leading-6 tracking-[2px] uppercase text-white font-['Segoe_UI'] mb-[6px] hover:opacity-70 transition-opacity" onclick="increaseQuantity()">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Add to Cart Button -->
+                    <button class="bg-[#313131] border border-[#313131] rounded-[22px] px-[34px] py-[12px] mb-3 hover:bg-gray-800 transition-colors">
+                        <span class="text-[15px] font-normal leading-5 tracking-[1px] uppercase text-white font-['Segoe_UI']">
+                            Add to cart
+                        </span>
+                    </button>
+                </div>
+
+                <!-- Beauty Bundle -->
+                <div class="bg-[#f2f2f2] rounded-[24px] p-[18px] sm:p-[20px] mt-[18px] w-full">
+                    <!-- Bundle Header -->
+                    <div class="flex flex-row gap-3 justify-center items-center w-full px-[56px]">
+                        <img src="../assets/images/img_button_previous.svg" class="w-6 h-6" alt="Previous" />
+                        <span class="text-[20px] font-semibold leading-[27px] text-center text-[#313131] font-['Segoe_UI']">
+                            Beauty Bundle
+                        </span>
+                        <img src="../assets/images/img_button_next_slide.svg" class="w-6 h-6" alt="Next" />
+                    </div>
+                    
+                    <!-- Bundle Products -->
+                    <div class="flex flex-col sm:flex-row justify-start items-center w-full mt-6">
+                        <div class="flex flex-row justify-start items-center w-full">
+                            <!-- Product 1 -->
+                            <div class="flex flex-col gap-[10px] justify-start items-center flex-1">
+                                <img src="../assets/images/img_image_94x94.png" class="w-[70px] h-[70px] sm:w-[84px] sm:h-[84px] lg:w-[94px] lg:h-[94px] rounded-[10px]" alt="UMF 20+" />
+                                <span class="text-[16px] sm:text-[18px] font-semibold leading-6 text-center text-[#313131] font-['Segoe_UI']">
+                                    UMF 20+
+                                </span>
+                                <select class="border border-[#cdcdcd] rounded-[12px] px-3 py-1 text-[14px] font-normal leading-[19px] text-[#313131] font-['Segoe_UI'] w-full max-w-[100px]">
+                                    <option>250g</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Plus Sign -->
+                            <div class="flex flex-col justify-start items-end px-0 py-8">
+                                <span class="text-[18px] font-semibold leading-6 text-center text-[#313131] font-['Segoe_UI'] mt-[6px]">
+                                    +
+                                </span>
+                            </div>
+                            
+                            <!-- Product 2 -->
+                            <div class="flex flex-col gap-[10px] justify-start items-center flex-1">
+                                <img src="../assets/images/img_image_1.png" class="w-[70px] h-[70px] sm:w-[84px] sm:h-[84px] lg:w-[94px] lg:h-[94px] rounded-[10px]" alt="UMF 24+" />
+                                <span class="text-[16px] sm:text-[18px] font-semibold leading-6 text-center text-[#313131] font-['Segoe_UI']">
+                                    UMF 24+
+                                </span>
+                                <select class="border border-[#cdcdcd] rounded-[12px] px-3 py-1 text-[14px] font-normal leading-[19px] text-[#313131] font-['Segoe_UI'] w-full max-w-[100px]">
+                                    <option>250g</option>
+                                </select>
+                            </div>
+                            
+                            <!-- Plus Sign -->
+                            <div class="flex flex-col justify-start items-end px-0 py-8">
+                                <span class="text-[18px] font-semibold leading-6 text-center text-[#313131] font-['Segoe_UI'] mt-[6px]">
+                                    +
+                                </span>
+                            </div>
+                            
+                            <!-- Product 3 -->
+                            <div class="flex flex-col gap-[10px] justify-start items-center flex-1 mr-[22px]">
+                                <img src="../assets/images/img_image_152.png" class="w-[70px] h-[70px] sm:w-[84px] sm:h-[84px] lg:w-[94px] lg:h-[94px] rounded-[10px]" alt="Wooden Spoon" />
+                                <span class="text-[14px] sm:text-[16px] lg:text-[18px] font-semibold leading-[20px] sm:leading-[23px] text-center text-[#313131] font-['Segoe_UI']">
+                                    Wooden Spoon
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <!-- Bundle Pricing -->
+                        <div class="flex flex-col gap-3 justify-start items-center w-full sm:w-[42%] mt-4 sm:mt-0">
+                            <div class="flex flex-row gap-2 justify-center items-center">
+                                <span class="text-[14px] font-normal leading-[19px] text-center line-through text-[#313131] font-['Segoe_UI']">
+                                    $478.75 USD
+                                </span>
+                                <span class="text-[18px] font-semibold leading-6 text-center text-[#313131] font-['Segoe_UI']">
+                                    $430.88 USD
+                                </span>
+                                <span class="text-[14px] font-semibold leading-[19px] text-left text-[#087f1a] font-['Segoe_UI']">
+                                    Save 10%
+                                </span>
+                            </div>
+                            <button class="bg-[#313131] border border-[#313131] rounded-[22px] px-[34px] py-[10px] w-full hover:bg-gray-800 transition-colors">
+                                <span class="text-[16px] font-normal leading-[22px] tracking-[1px] uppercase text-white font-['Segoe_UI']">
+                                    Add bundle to cart
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colourclub Rewards -->
+                <div class="flex flex-col gap-4 justify-start items-center w-full mt-8">
+                    <div class="flex flex-row justify-center items-end">
+                        <img src="../assets/images/img_colourclub_logo.png" class="w-[40px] h-[38px] rounded-[18px]" alt="Colourclub Logo" />
+                        <span class="text-[14px] font-normal leading-[19px] text-left text-[#313131] font-['Segoe_UI'] ml-[18px] mb-[6px]">
+                            Colourclub members earn up to
+                        </span>
+                        <div class="bg-white rounded-[16px] px-2 py-[2px] ml-3">
+                            <span class="text-[18px] font-normal leading-6 text-left text-[#f39c12] font-['Segoe_UI']">
+                                56
+                            </span>
+                        </div>
+                        <span class="text-[14px] font-normal leading-[19px] text-left text-[#313131] font-['Segoe_UI'] ml-3 mb-[6px]">
+                            reward points when buy this item.
+                        </span>
+                        <span class="text-[13px] font-normal leading-[19px] text-left text-[#313131] font-['Segoe_UI'] ml-2 mb-[6px]">
+                            Sign up or log in
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Delivery Information -->
+                <div class="flex flex-col sm:flex-row justify-start items-center w-full mt-6">
+                    <div class="flex flex-col gap-1 justify-start items-start">
+                        <span class="text-[14px] font-normal leading-[19px] tracking-[1px] uppercase text-[#313131] font-['Segoe_UI'] mt-6">
+                            Delivery
+                        </span>
+                        <span class="text-[14px] font-normal leading-[19px] text-[#313131] font-['Segoe_UI']">
+                            FREE DELIVERY ON ORDERS OVER $30
+                        </span>
+                    </div>
+                    <div class="mt-4 sm:mt-0 sm:ml-auto">
+                        <span class="text-[13px] font-normal leading-[18px] text-[#313131] font-['Segoe_UI']">
+                            ESTIMATED DELIVERY DATE:<br />Jun 9 - Jun 13 to
+                        </span>
+                    </div>
+                </div>
+
+                <!-- After Pay -->
+                <div class="flex flex-col gap-1 justify-start items-start w-full border-t border-[#313131] pt-4 mt-4">
+                    <span class="text-[14px] font-normal leading-[19px] tracking-[1px] uppercase text-[#313131] font-['Segoe_UI'] mt-[10px]">
+                        After Pay
+                    </span>
+                    <div class="flex flex-row justify-start items-center w-full">
+                        <span class="text-[14px] font-normal leading-[19px] text-[#313131] font-['Segoe_UI']">
+                            or 4 interest-free payments of $13.97 with
+                        </span>
+                        <img src="../assets/images/img_button_afterpay.svg" class="w-[70px] sm:w-[90px] h-[18px] sm:h-[22px] ml-2" alt="Afterpay" />
+                        <img src="../assets/images/img_svg_gray_700.svg" class="w-[14px] h-[14px] ml-2" alt="Info" />
+                    </div>
+                </div>
+
+                <!-- UMF Scale -->
+                <div class="flex flex-col justify-start items-start w-full border-t border-[#313131] pt-8 mt-4">
+                    <span class="text-[14px] font-normal leading-[19px] tracking-[1px] uppercase text-[#313131] font-['Segoe_UI'] mt-[34px]">
+                        UMF™ scale
+                    </span>
+                    
+                    <div class="flex flex-row gap-1 justify-start items-center w-full mt-4 overflow-x-auto">
+                        <div class="px-[6px] flex justify-center items-center flex-shrink-0">
+                            <span class="text-[13px] font-normal leading-[18px] tracking-[1px] text-center text-[#313131] font-['Segoe_UI']">
+                                UMF™ 10+
+                            </span>
+                        </div>
+                        <div class="px-2 flex justify-center items-center flex-shrink-0">
+                            <span class="text-[13px] font-normal leading-[18px] tracking-[1px] text-center text-[#313131] font-['Segoe_UI']">
+                                UMF™ 15+
+                            </span>
+                        </div>
+                        <div class="px-[6px] flex justify-center items-center flex-shrink-0">
+                            <span class="text-[13px] font-normal leading-[19px] tracking-[1px] text-center text-[#313131] font-['Segoe_UI']">
+                                UMF™ 20+
+                            </span>
+                        </div>
+                        <div class="flex flex-col justify-start items-center flex-shrink-0">
+                            <span class="text-[13px] font-normal leading-[19px] tracking-[1px] text-center text-[#830065] font-['Segoe_UI']">
+                                UMF™ 24+
+                            </span>
+                            <div class="w-[86px] h-[3px] bg-[#830065] mt-1"></div>
+                        </div>
+                        <div class="px-[6px] flex justify-center items-center flex-shrink-0">
+                            <span class="text-[13px] font-normal leading-[19px] tracking-[1px] text-center text-[#313131] font-['Segoe_UI']">
+                                UMF™ 26+
+                            </span>
+                        </div>
+                        <div class="px-[6px] flex justify-center items-center flex-shrink-0">
+                            <span class="text-[13px] font-normal leading-[19px] tracking-[1px] text-center text-[#313131] font-['Segoe_UI']">
+                                UMF™ 28+
+                            </span>
+                        </div>
+                        <div class="px-[6px] flex justify-center items-center flex-shrink-0">
+                            <span class="text-[13px] font-normal leading-[19px] tracking-[1px] text-center text-[#313131] font-['Segoe_UI']">
+                                UMF™ 30+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Taste Profile -->
+                <div class="flex flex-col justify-start items-start w-full mt-6">
+                    <span class="text-[14px] font-normal leading-[19px] tracking-[1px] uppercase text-[#313131] font-['Segoe_UI'] mt-6">
+                        Taste Profile
+                    </span>
+                    
+                    <!-- Taste Scale -->
+                    <div class="flex flex-row justify-center items-center w-full rounded-[1px] px-[56px] py-4 mt-7 bg-gradient-to-r from-[#e87722] via-[#830065] to-[#203e96]">
+                        <img src="../assets/images/img_image_blue_gray_900.svg" class="w-8 h-8" alt="Taste indicator" />
+                    </div>
+                    
+                    <div class="flex flex-row justify-between items-center w-full mt-[10px]">
+                        <span class="text-[13px] font-normal leading-[19px] text-left text-[#313131] font-['Segoe_UI']">
+                            Clean & Intense
+                        </span>
+                        <span class="text-[13px] font-normal leading-[18px] text-left text-[#313131] font-['Segoe_UI']">
+                            Bold & Intense
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- UMF/MGO Info Modal -->
+    <div id="infoModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-[10px] p-5 max-w-[500px] w-full max-h-[90vh] overflow-y-auto relative">
+            <!-- Close Button -->
+            <div class="absolute top-4 right-4">
+                <button onclick="toggleInfoModal()" class="text-[13px] font-semibold leading-[19px] underline text-[#666666] font-['Segoe_UI'] hover:text-gray-800 transition-colors">
+                    Close
+                </button>
+            </div>
+            
+            <!-- Modal Content -->
+            <div class="flex flex-col gap-4">
+                <h3 class="text-[18px] font-normal leading-6 text-[#313131] font-['Segoe_UI'] mt-[52px]">
+                    The Optimiser
+                </h3>
+                
+                <!-- UMF Section -->
+                <div class="bg-[#f1f1f1] rounded-[5px] p-4">
+                    <div class="flex flex-col gap-4">
+                        <p class="text-[16px] font-normal leading-6 text-[#313131] font-['Inter']">
+                            <span class="font-bold font-['Segoe_UI']">UMF</span> is the strength and purity rating of Manuka honey.
+                        </p>
+                        
+                        <!-- UMF Scale -->
+                        <div class="flex flex-col gap-3">
+                            <div class="grid grid-cols-7 gap-[6px]">
+                                <div class="flex flex-col gap-1 items-start">
+                                    <span class="text-[14px] font-semibold leading-[19px] text-[#e87722] font-['Segoe_UI']">10+</span>
+                                    <div class="w-[56px] h-1 bg-[#e87722]"></div>
+                                </div>
+                                <div class="flex flex-col gap-1 items-start">
+                                    <span class="text-[14px] font-semibold leading-[19px] text-[#e10600] font-['Segoe_UI']">15+</span>
+                                    <div class="w-[56px] h-1 bg-[#e10600]"></div>
+                                </div>
+                                <div class="flex flex-col gap-1 items-start">
+                                    <span class="text-[14px] font-semibold leading-[19px] text-[#ce0f69] font-['Segoe_UI']">20+</span>
+                                    <div class="w-[56px] h-1 bg-[#ce0f69]"></div>
+                                </div>
+                                <div class="flex flex-col gap-1 items-start">
+                                    <span class="text-[14px] font-semibold leading-[19px] text-[#830065] font-['Segoe_UI']">24+</span>
+                                    <div class="w-[56px] h-1 bg-[#830065]"></div>
+                                </div>
+                                <div class="flex flex-col gap-1 items-start">
+                                    <span class="text-[14px] font-semibold leading-[19px] text-[#0085ca] font-['Segoe_UI']">26+</span>
+                                    <div class="w-[56px] h-1 bg-[#0085ca]"></div>
+                                </div>
+                                <div class="flex flex-col gap-1 items-start">
+                                    <span class="text-[14px] font-semibold leading-[19px] text-[#3bad4e] font-['Segoe_UI']">28+</span>
+                                    <div class="w-[56px] h-1 bg-[#3bad4e]"></div>
+                                </div>
+                                <div class="flex flex-col gap-1 items-start">
+                                    <span class="text-[14px] font-semibold leading-[19px] text-[#203e96] font-['Segoe_UI']">30+</span>
+                                    <div class="w-[56px] h-1 bg-[#203e96]"></div>
+                                </div>
+                            </div>
+                            <p class="text-[14px] font-normal leading-[21px] text-[#313131bf] font-['Inter']">
+                                The higher the number, the greater the potency and rarity of Manuka honey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- MGO Section -->
+                <div class="bg-[#f1f1f1] rounded-[5px] p-4">
+                    <div class="flex flex-col gap-5">
+                        <p class="text-[16px] font-normal leading-6 text-[#313131] font-['Inter']">
+                            <span class="font-bold font-['Segoe_UI']">MGO</span> is the key natural compound that gives Manuka honey its special antibacterial strength.
+                        </p>
+                        
+                        <!-- MGO Scale -->
+                        <div class="flex flex-col gap-3">
+                            <div class="grid grid-cols-7 gap-[6px]">
+                                <div class="flex flex-col gap-1 items-start">
+                                    <span class="text-[14px] font-semibold leading-[19px] text-[#e87722] font-['Segoe_UI']">263+</span>
+                                    <div class="w-[56px] h-1 bg-[#e87722]"></div>
+                                </div>
+                                <div class="flex flex-col gap-1 items-start">
+                                    <span class="text-[14px] font-semibold leading-[19px] text-[#e10600] font-['Segoe_UI']">514+</span>
+                                    <div class="w-[56px] h-1 bg-[#e10600]"></div>
+                                </div>
+                                <div class="flex flex-col gap-1 items-start">
+                                    <span class="text-[14px] font-semibold leading-[19px] text-[#ce0f69] font-['Segoe_UI']">829+</span>
+                                    <div class="w-[56px] h-1 bg-[#ce0f69]"></div>
+                                </div>
+                                <div class="flex flex-col gap-1 items-start">
+                                    <span class="text-[14px] font-semibold leading-[19px] text-[#830065] font-['Segoe_UI']">1122+</span>
+                                    <div class="w-[56px] h-1 bg-[#830065]"></div>
+                                </div>
+                                <div class="flex flex-col gap-1 items-start">
+                                    <span class="text-[14px] font-semibold leading-[19px] text-[#0085ca] font-['Segoe_UI']">1282+</span>
+                                    <div class="w-[56px] h-1 bg-[#0085ca]"></div>
+                                </div>
+                                <div class="flex flex-col gap-1 items-start">
+                                    <span class="text-[14px] font-semibold leading-[19px] text-[#3bad4e] font-['Segoe_UI']">1450+</span>
+                                    <div class="w-[56px] h-1 bg-[#3bad4e]"></div>
+                                </div>
+                                <div class="flex flex-col gap-1 items-start">
+                                    <span class="text-[14px] font-semibold leading-[19px] text-[#203e96] font-['Segoe_UI']">1620+</span>
+                                    <div class="w-[56px] h-1 bg-[#203e96]"></div>
+                                </div>
+                            </div>
+                            <p class="text-[14px] font-normal leading-[21px] text-[#313131bf] font-['Inter']">
+                                The higher the number, the higher the antibacterial properties in the honey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Info modal toggle
+        function toggleInfoModal() {
+            const modal = document.getElementById('infoModal');
+            modal.classList.toggle('hidden');
+        }
+
+        // Quantity controls
+        function increaseQuantity() {
+            const quantityElement = document.getElementById('quantity');
+            let quantity = parseInt(quantityElement.textContent);
+            quantity++;
+            quantityElement.textContent = quantity;
+        }
+
+        function decreaseQuantity() {
+            const quantityElement = document.getElementById('quantity');
+            let quantity = parseInt(quantityElement.textContent);
+            if (quantity > 1) {
+                quantity--;
+                quantityElement.textContent = quantity;
+            }
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('infoModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                toggleInfoModal();
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
